@@ -2,7 +2,6 @@
 #include <queue>
 #include <fstream>
 using namespace std;
-
 int check(int row, int col, char** lab, int** visited, queue<int>& plan) {
 	int empty = 0;
 	if (!visited[row][col]) {
@@ -39,7 +38,6 @@ int check(int row, int col, char** lab, int** visited, queue<int>& plan) {
 	}
 	return 0;
 }
-
 int main() {
 	int N;
 	try
@@ -106,7 +104,6 @@ int main() {
 		}
 		return errorid;
 	}
-
 	std::fstream file("input.txt", std::ios_base::in);
 	file >> N;
 	char** lab = new char* [N + 2];
